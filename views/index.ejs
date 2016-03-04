@@ -3,8 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Student App</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet/less" href="./css/styles.less">
+	<!-- Change for production (Use gulp or grunt to precompile less to css) -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 </head>
 <body>
-	<h1>Sanity Check</h1>
+	<nav>
+		<ul>
+			<li class="nav-brand"><a href="/">Student Communication</a></li>
+			<ul class="nav-right"style=";list-style-type:none;">
+			  <li><a class="active" href="#about">SignUp</a></li>
+			  <li><a href="#login">Login</a></li>
+			</ul>
+		</ul>
+	</nav>
+	<div id="landing">
+		<h1>Welcome to<br>Student Communication</h1>
+		<h2>The future of student collaboration</h2>
+		<div id="landing-search">
+			<div class="search-forms">
+				<form action="#">
+					<input type="text" placeholder="Search for your school">
+					<button>Search Schools</button>
+				</form>
+				<form id="landing-class-search" action="#">
+					<input type="text" placeholder="Search for your class">
+					<button>Search Classes</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

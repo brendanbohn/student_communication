@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+}
+
+/*//////////*/
+/*	LANDING	*/
+/*//////////*/
+
+nav {
+	height: 50px;
+	width: 100vw;
+	position: fixed;
+	top: 10px;
+	z-index: 9999;
+	ul {
+		list-style: none;
+		padding: 0 30px;
+		.nav-right {
+			float: right; 
+		}
+	}
+	li {
+		display: inline;
+		padding: 0 20px;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+		&:hover {
+			color: gray;
+		}
+	}
+}
+
+#landing {
+	position: relative;
+	overflow: auto;
+	height: 90vh;
+	background-image: url('../img/bed-study.jpeg'); 
+	background-size: cover;
+	background-position: bottom center;
+	h1 {
+		font-size: 90px;
+		font-family: Roboto;
+		font-weight: 900;
+		color: white;
+		text-align: center;
+		line-height: 90px;
+		margin: 80px 0 25px 0;
+	}
+	h2 {
+		text-align: center;
+		color: white;
+	}
+}
+#landing-search {
+	position: absolute;
+	bottom: 0;
+	height: 125px;
+	width: 100vw;
+	background-color: rgba(0,0,0,.5);
+	.search-forms {
+		padding-top: 45px;
+		margin: 0 auto;
+		width: 1050px;
+		form {
+			display: inline-block;
+			input {
+				padding: 10px 20px;
+				border-radius: 7px 0 0 7px;
+				border-style: none;
+				font-size: 16px;
+				width: 300px;
+				&:focus {
+					outline: none;
+				}
+			}
+			button {
+				padding: 10px 20px;
+				border-radius: 0 7px 7px 0;
+				border-style: none;
+				position: relative;
+				right: 4px;
+				font-size: 16px;
+				background-color: #33ccff;
+				color: white;
+				&:hover {
+					cursor: pointer;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+}
+
+#landing-class-search {
+	float: right;
+}
